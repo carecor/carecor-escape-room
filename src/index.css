@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-carecor-pink: #FEAEC9;
+    --color-carecor-blue: #9AD9EA;
+    --color-carecor-lavender: #C7BFE8;
+    --color-carecor-light: #E8E0EE;
+    --color-carecor-ink: #251B35;
+  }
+
+  body {
+    background-color: #E8E0EE;
+    color: #251B35;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #E8E0EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7BFE8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FEAEC9;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(254, 174, 201, 0.4); }
+  50% { box-shadow: 0 0 25px rgba(154, 217, 234, 0.8); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}

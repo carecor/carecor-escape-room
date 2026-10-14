@@ -1,0 +1,6 @@
+{
+  "name": "CARECOR Office Escape Room",
+  "description": "An interactive escape room team challenge for CARECOR employees featuring 8 themed rooms, puzzles, rebuses, awards, and team bonding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
